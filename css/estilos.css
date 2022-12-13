@@ -1,0 +1,162 @@
+* {
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.color-fondo1 {
+	background: rgba(6, 6, 6, 0.475);	
+}
+.color-fondo2 {
+	background:#f4eac9;
+}
+.color-fondo3 {
+	background: #5361ff;
+}
+
+.color-fondo4{
+	background: rgba(255, 255, 255, 0.343);
+}
+.color-texto1{
+	color:rgb(255, 255, 255);	
+}
+.color-texto2{
+	color: rgb(10, 10, 10);
+}
+.modelo{
+	display: flex;
+	flex-wrap:wrap;
+}
+.tipo1{
+	flex-direction:row;	
+}
+.tipo2{
+	flex-direction:column;	
+}
+
+body {
+	font-family: 'Verdana', sans-serif;
+	background: #FEDB5D url('../images/fondo.jpg');
+	background-size: cover;
+	background-attachment: fixed
+}
+
+.contenedor {
+	margin: auto;
+	width: 90%;
+	max-width: 1000px;
+}
+	header {
+		width: 100%;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		justify-content:center;
+		align-items:center;
+		gap: 10px;
+	}
+		header figure {
+			width: 70px;
+		}
+		header figure img {
+			width: 100%;
+			transform: scaleX(-1);
+		}
+		header .titulo {
+
+			text-align: center;
+
+		}
+		#caja ul,ol {
+			padding-left:20px;
+		}
+		#caja h3 {padding-bottom: 10px;}
+
+		#caja section {
+			/* background: #FEDB5D; */
+			padding: 20px;
+			width: 100%;
+		}
+			#caja section .thumb {
+				margin-bottom: 20px;
+			}
+				section .thumb img {
+				vertical-align: top;
+				width: 100%;
+			}
+			#caja section  h2 {
+				margin-bottom: 20px;
+				font-weight: normal;
+				font-size: 32px;
+			}
+			#caja section  p {
+				margin-bottom: 20px;
+				font-size: 14px;
+				line-height: 27px;
+			}	
+			/* section> ul,ol {
+				padding-left:20px;
+			} */
+		#caja aside {
+			width: 100%;
+			padding: 20px;
+			justify-content:flex-start;
+			gap: 20px;
+		}
+			#caja aside .wit {
+				font-size: 1em;
+				text-align: left;
+				padding: 10px 10px;
+				width: 100%;
+			}
+				#caja aside .wit figure {
+					width: 100%;
+					display: block;
+					margin: auto;
+				}
+				#caja aside .wit figure img {
+						width: 100%;
+					}
+	footer {
+		margin-top: 20px;
+		margin-bottom: 20px;	
+		padding: 20px;
+		margin-bottom: 20px;
+		width: 100%;
+		justify-content:center;
+		text-align: center;
+		gap: 20px;
+	}
+		footer .autor {
+			padding-top: 8px;
+			font-weight: 600;
+		}
+@media screen and (min-width: 801px) {
+	#caja section {
+		width: 70%;
+		}
+	#caja aside {
+		width: 30%;
+		}
+	}
+@media screen and (max-width: 800px) {
+	#caja aside {
+		flex-direction:row;
+		justify-content:space-between;
+	}
+		#caja aside .wit {
+			width: 45%;
+		}
+}
+@media screen and (max-width: 480px) {
+	#caja aside {
+		flex-direction:column;
+		justify-content:center;
+	}
+		#caja aside .wit {
+			width: 100%;
+		}
+}
