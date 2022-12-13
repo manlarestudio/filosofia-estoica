@@ -38,7 +38,7 @@
 
 body {
 	font-family: 'Verdana', sans-serif;
-	background: #FEDB5D url('../images/fondo.jpg');
+	background: #f4eac9 url('../images/fondo.jpg');
 	background-size: cover;
 	background-attachment: fixed
 }
