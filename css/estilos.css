@@ -101,6 +101,11 @@ body {
 				padding-bottom: 10px;
 				font-size: 1em;
 			}
+			#caja section blockquote{
+				background: #faf7eb;
+				padding: 20px;
+				font-style: italic;
+			}
 
 		#caja aside {
 			width: 100%;
