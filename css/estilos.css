@@ -94,12 +94,14 @@ body {
 			}
 			#caja section  p {
 				margin-bottom: 20px;
-				font-size: 14px;
+				font-size: 1em;
 				line-height: 27px;
 			}	
-			/* section> ul,ol {
-				padding-left:20px;
-			} */
+			#caja section> ul,ol {
+				padding-bottom: 10px;
+				font-size: 1em;
+			}
+
 		#caja aside {
 			width: 100%;
 			padding: 20px;
